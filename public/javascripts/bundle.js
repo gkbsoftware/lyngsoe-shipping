@@ -44,12 +44,13 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	__webpack_require__(1);
 
 	var React = __webpack_require__(5);
-	var NavBar = __webpack_require__(162);
+	var ReactDOM = __webpack_require__(162);
+	var NavBar = __webpack_require__(163);
 
 	$(document).ready(function () {
 	  $(".button-collapse").sideNav();
@@ -57,7 +58,7 @@
 	});
 
 	var App = React.createClass({
-	  displayName: "App",
+	  displayName: 'App',
 
 	  componentDidMount: function componentDidMount() {
 	    document.getElementById('preloader').remove();
@@ -66,7 +67,7 @@
 
 	  render: function render() {
 	    return React.createElement(
-	      "app",
+	      'app',
 	      null,
 	      React.createElement(NavBar, null)
 	    );
@@ -74,7 +75,7 @@
 	});
 
 	var renderApp = function renderApp() {
-	  React.render(React.createElement(App, null), document.getElementById('react-entry'));
+	  ReactDOM.render(React.createElement(App, null), document.getElementById('react-entry'));
 	};
 
 	renderApp();
@@ -19996,6 +19997,15 @@
 
 /***/ },
 /* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(7);
+
+
+/***/ },
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

@@ -1,6 +1,7 @@
 require("./stylesheets/webpack-style.css");
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 var NavBar = require("./NavBar.jsx");
 
 $( document ).ready(function(){
@@ -24,7 +25,7 @@ var App = React.createClass({
 });
 
 var renderApp = function() {
-  React.render(<App/>, document.getElementById('react-entry'));
+  ReactDOM.render(<App/>, document.getElementById('react-entry'));
 }
 
 renderApp();
