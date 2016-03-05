@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Insert head -->
+    <% include ./layout/head %>
+  </head>
+  <body>
+    <!-- Show spinner while loading resources to client side -->
+    <div class="preloader-wrapper big active" id="preloader">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Insert client-side React Component -->
+    <div id="react-entry"></div>
+    
+    <!-- Insert JS into end of body -->
+    <% include ./layout/body-scripts %>
+  </body>
+</html>
