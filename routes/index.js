@@ -3,7 +3,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Lyngsoe Shipping' });
+  if (req.signedCookies.userId) {
+    console.log("Logged in as: " + req.signedCookies.userId);
+    res.render('index', { title: 'Lyngsoe Shipping' });
+  }
+  else {
+    res.redirect('/users')
+  }
 });
 
 module.exports = router;
