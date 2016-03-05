@@ -1,2 +1,3 @@
-# blank-canvas
-barebones express application with ejs views and webpack (with jsx loader wired up)
+# lyngsoe-shipping
+
+Set up shipments with UPS, create Delivery Notes, create Part Reqs, and document all of it automatically.
