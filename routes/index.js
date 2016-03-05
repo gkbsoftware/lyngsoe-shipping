@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   if (req.signedCookies.userId) {
     console.log("Logged in as: " + req.signedCookies.userId);
-    res.render('index', { title: 'Lyngsoe Shipping' });
+    res.render('index', { title: 'Lyngsoe Shipping', routePath: "javascripts/bundle.js"});
   }
   else {
     res.redirect('/users')
