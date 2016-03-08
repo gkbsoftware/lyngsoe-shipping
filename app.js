@@ -12,7 +12,7 @@ var users = require('./routes/users');
 
 var app = express();
 
-app.set('view engine', 'html');
+app.set('view engine', 'jsx');
 app.set('views', path.join(__dirname, 'views'));
 app.engine('jsx', require('express-react-views').createEngine());
 
