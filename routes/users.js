@@ -21,8 +21,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/sign_up', function(req, res, next) {
-  
-  res.render('index', {title: "Sign Up", routePath: "../javascripts/bundle.js"})
+  res.render('index.ejs', {title: "Sign Up", routePath: "../javascripts/bundle.js"})
   // res.send('signup')
 });
 
